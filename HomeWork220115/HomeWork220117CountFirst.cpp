@@ -11,46 +11,46 @@ int StringCount(const char* _Text) {
 
     return Count;
 }
+bool StringCompare(const char* _Left, const char* _Right)
+{
+    int  i = 0;
+    for (; 0 != _Left[i] && 0 != _Right[i];i += 1)
+    {
+        if (_Left[i] != _Right[i])
+        {
+            return false;
+        }
+    }
+    if (0 == _Left[i] && 0 != _Right[i])
+    {
+        return false;
+    }
+    return true;
+}
 
 int CountFirst(const char* _Text, int _Start, const char* _FindStr)
 {
+    if (_Text == nullptr || _FindStr == nullptr)
+    {
+        return -1;
+    }
     int TextCount = StringCount(_Text);
     int FindCount = StringCount(_FindStr);
-    int Find_idx = _Start;
-    bool check = false;
     if (_Start < 0 || _Start > TextCount)
     {
         return -1;
     }
-    while (Find_idx + (FindCount - 1) < TextCount)
+    for (int i = _Start; i < TextCount; i += 1)
     {
-        for (; _Text[Find_idx] != _FindStr[0] && Find_idx < TextCount; Find_idx += 1);
-        if (_Text[Find_idx] == _FindStr[0])
+        if (_Text[i] == _FindStr[0])
         {
-            for (int i = 0; i < FindCount; i += 1)
+            if (true == StringCompare(&_Text[i], &_FindStr[0]))
             {
-                if (_Text[Find_idx + i] == _FindStr[i])
-                {
-                    check = true;
-                }
-                else
-                {
-                    check = false;
-                    break;
-                }
+                return i;
             }
         }
-        if (check == true)
-        {
-            return Find_idx;
-        }
-        Find_idx += 1;
     }
-    return -1;
-}
 
-int CountLast(const char* _Text, int _End, const char* _FindStr)
-{
     return -1;
 }
 
@@ -58,6 +58,7 @@ int CountLast(const char* _Text, int _End, const char* _FindStr)
 int main()
 {
     // 실패
-    int Count = CountFirst("aaa eee ttt asdfasd eee", 4, "kee");
+    int Count = CountFirst("aaa eee aaa eeee", 7, "eee");
+    int a = 0;
   
 }
