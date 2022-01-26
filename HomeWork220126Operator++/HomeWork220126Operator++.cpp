@@ -38,10 +38,6 @@ public:
         : Value(_Value)
     {
     }
-    MyInt(const MyInt* _Value)
-        : Value(_Value->Value)
-    {
-    }
 };
 
 #include <iostream>
