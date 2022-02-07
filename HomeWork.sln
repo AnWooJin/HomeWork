@@ -15,6 +15,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HomeWork220117CountLast", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HomeWork220126Operator++", "HomeWork220126Operator++\HomeWork220126Operator++.vcxproj", "{B8FB3D2D-5116-4D6C-9051-53E8E6121A72}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HomeWork220207MemoryFlow", "HomeWork220207MemoryFlow", "{A3423D02-99AD-4CBB-9812-EB13312E86FF}"
+	ProjectSection(SolutionItems) = preProject
+		HomeWork220207Memoryflow\HomeWork 220207 memoryflow.pptx = HomeWork220207Memoryflow\HomeWork 220207 memoryflow.pptx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
