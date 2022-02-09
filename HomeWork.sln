@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HomeWork220207MemoryFlow", 
 		HomeWork220207Memoryflow\HomeWork 220207 memoryflow.pptx = HomeWork220207Memoryflow\HomeWork 220207 memoryflow.pptx
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HomeWork220209", "HomeWork220209\HomeWork220209.vcxproj", "{19DE0F41-9379-4DB9-B509-A01E0D3678E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -76,6 +78,14 @@ Global
 		{B8FB3D2D-5116-4D6C-9051-53E8E6121A72}.Release|x64.Build.0 = Release|x64
 		{B8FB3D2D-5116-4D6C-9051-53E8E6121A72}.Release|x86.ActiveCfg = Release|Win32
 		{B8FB3D2D-5116-4D6C-9051-53E8E6121A72}.Release|x86.Build.0 = Release|Win32
+		{19DE0F41-9379-4DB9-B509-A01E0D3678E7}.Debug|x64.ActiveCfg = Debug|x64
+		{19DE0F41-9379-4DB9-B509-A01E0D3678E7}.Debug|x64.Build.0 = Debug|x64
+		{19DE0F41-9379-4DB9-B509-A01E0D3678E7}.Debug|x86.ActiveCfg = Debug|Win32
+		{19DE0F41-9379-4DB9-B509-A01E0D3678E7}.Debug|x86.Build.0 = Debug|Win32
+		{19DE0F41-9379-4DB9-B509-A01E0D3678E7}.Release|x64.ActiveCfg = Release|x64
+		{19DE0F41-9379-4DB9-B509-A01E0D3678E7}.Release|x64.Build.0 = Release|x64
+		{19DE0F41-9379-4DB9-B509-A01E0D3678E7}.Release|x86.ActiveCfg = Release|Win32
+		{19DE0F41-9379-4DB9-B509-A01E0D3678E7}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
