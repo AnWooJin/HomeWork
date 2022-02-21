@@ -26,6 +26,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HomeWork220210", "HomeWork2
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HomeWork220215GameArray", "HomeWork220215GameArray\HomeWork220215GameArray.vcxproj", "{9E903CF9-6F41-4C60-9DA5-F8A5830C7E30}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HomeWork220221LeakCheck", "HomeWork220221LeakCheck\HomeWork220221LeakCheck.vcxproj", "{FB2DA968-A075-42D6-B3A3-E81FC63DC1AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -106,6 +108,14 @@ Global
 		{9E903CF9-6F41-4C60-9DA5-F8A5830C7E30}.Release|x64.Build.0 = Release|x64
 		{9E903CF9-6F41-4C60-9DA5-F8A5830C7E30}.Release|x86.ActiveCfg = Release|Win32
 		{9E903CF9-6F41-4C60-9DA5-F8A5830C7E30}.Release|x86.Build.0 = Release|Win32
+		{FB2DA968-A075-42D6-B3A3-E81FC63DC1AB}.Debug|x64.ActiveCfg = Debug|x64
+		{FB2DA968-A075-42D6-B3A3-E81FC63DC1AB}.Debug|x64.Build.0 = Debug|x64
+		{FB2DA968-A075-42D6-B3A3-E81FC63DC1AB}.Debug|x86.ActiveCfg = Debug|Win32
+		{FB2DA968-A075-42D6-B3A3-E81FC63DC1AB}.Debug|x86.Build.0 = Debug|Win32
+		{FB2DA968-A075-42D6-B3A3-E81FC63DC1AB}.Release|x64.ActiveCfg = Release|x64
+		{FB2DA968-A075-42D6-B3A3-E81FC63DC1AB}.Release|x64.Build.0 = Release|x64
+		{FB2DA968-A075-42D6-B3A3-E81FC63DC1AB}.Release|x86.ActiveCfg = Release|Win32
+		{FB2DA968-A075-42D6-B3A3-E81FC63DC1AB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
