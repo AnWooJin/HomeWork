@@ -60,24 +60,29 @@ private:
                 }
                 if (nullptr == Node->RightChild_ && nullptr == Node->LeftChild_)
                 {
-                    if (Node->Type == MapNodeType::LeftChild)
-                    {
-                        Node->Parent_->LeftChild_ = nullptr;
-                    }
-                    if (Node->Type == MapNodeType::RightChild)
-                    {
-                        Node->Parent_->RightChild_ = nullptr;
-                    }
-                    NextNode = Node->Parent_;
-                    std::cout << Node->Pair_.first << "번 노드가 삭제됬습니다" << std::endl;
-                    if (Node != nullptr)
-                    {
-                        delete Node;
-                        Node = NextNode;
-                    }       
+                    Node = NodeDelete(Node);
                 }
             }
         }
+
+        MapNode* NodeDelete(MapNode* Node_)
+        {
+			MapNode* NextNode = nullptr;
+			if (Node_->Type == MapNodeType::LeftChild)
+			{
+				Node_->Parent_->LeftChild_ = nullptr;
+			}
+			if (Node_->Type == MapNodeType::RightChild)
+			{
+				Node_->Parent_->RightChild_ = nullptr;
+			}
+			NextNode = Node_->Parent_;
+			if (Node_ != nullptr)
+			{
+				delete Node_;
+			}
+            return NextNode;
+		}
         void FirstOrder()
         {
             // 내가 해야할일
@@ -234,6 +239,7 @@ private:
             : Parent_(nullptr)
             , LeftChild_(nullptr)
             , RightChild_(nullptr)
+            , Type(MapNodeType::Error)
         {
         }
     };
